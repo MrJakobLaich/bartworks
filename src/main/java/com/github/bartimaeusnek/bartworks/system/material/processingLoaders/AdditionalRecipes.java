@@ -329,7 +329,7 @@ public class AdditionalRecipes {
                                     BW_Meta_Items.getNEWCIRCUITS().getStack(i + 4)
                             }, null, null,
                             new FluidStack[]{
-                                    Materials.SolderingAlloy.getMolten((i + 1) * 36)
+                                    Materials.SolderingAlloyMK1.getMolten((i + 1) * 36)
                             }, null, (i + 1) * 750, BW_Util.getMachineVoltageFromTier((i + 1)), CLEANROOM));
         }
         for (int i = 7; i <= 10; i++) {
@@ -347,7 +347,7 @@ public class AdditionalRecipes {
                                     BW_Meta_Items.getNEWCIRCUITS().getStack(i + 4)
                             }, null, null,
                             new FluidStack[]{
-                                    Materials.SolderingAlloy.getMolten((i + 1) * 144)
+                                    Materials.SolderingAlloyMK1.getMolten((i + 1) * 144)
                             }, null, (i + 1) * 1500, BW_Util.getMachineVoltageFromTier(i + 1), CLEANROOM));
         }
         GT_Recipe.GT_Recipe_Map.sSmallNaquadahReactorFuels.addRecipe(true, new ItemStack[]{WerkstoffLoader.Tiberium.get(bolt)}, new ItemStack[]{}, null, null, null, 0, 0, 12500);

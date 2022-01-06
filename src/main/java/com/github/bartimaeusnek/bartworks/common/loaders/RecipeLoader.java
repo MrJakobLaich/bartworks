@@ -250,13 +250,13 @@ public class RecipeLoader {
                                 ItemList.Field_Generator_LuV.get(8)
                         },
                         new FluidStack[]{
-                                Materials.SolderingAlloy.getMolten(32 * 144),
+                                Materials.SolderingAlloyMK1.getMolten(32 * 144),
                                 Materials.Polytetrafluoroethylene.getMolten(32 * 144)
                         }, ItemRegistry.dehp, 5000, BW_Util.getMachineVoltageFromTier(6));
 
-            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("gregtech", "gt.blockmachines", 64, 1000), GT_Utility.getIntegratedCircuit(17), Materials.SolderingAlloy.getMolten(9216), ItemRegistry.megaMachines[0], 72000, BW_Util.getMachineVoltageFromTier(3));
-            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("gregtech", "gt.blockmachines", 64, 1002), GT_Utility.getIntegratedCircuit(17), Materials.SolderingAlloy.getMolten(9216), ItemRegistry.megaMachines[1], 72000, BW_Util.getMachineVoltageFromTier(3));
-            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("gregtech", "gt.blockmachines", 64, 1126), GT_Utility.getIntegratedCircuit(17), Materials.SolderingAlloy.getMolten(9216), ItemRegistry.megaMachines[2], 72000, BW_Util.getMachineVoltageFromTier(3));
+            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("gregtech", "gt.blockmachines", 64, 1000), GT_Utility.getIntegratedCircuit(17), Materials.SolderingAlloyMK1.getMolten(9216), ItemRegistry.megaMachines[0], 72000, BW_Util.getMachineVoltageFromTier(3));
+            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("gregtech", "gt.blockmachines", 64, 1002), GT_Utility.getIntegratedCircuit(17), Materials.SolderingAlloyMK1.getMolten(9216), ItemRegistry.megaMachines[1], 72000, BW_Util.getMachineVoltageFromTier(3));
+            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getModItem("gregtech", "gt.blockmachines", 64, 1126), GT_Utility.getIntegratedCircuit(17), Materials.SolderingAlloyMK1.getMolten(9216), ItemRegistry.megaMachines[2], 72000, BW_Util.getMachineVoltageFromTier(3));
 
             GT_Values.RA.addFluidSolidifierRecipe(new ItemStack(ItemRegistry.bw_glasses[0], 1, 0), Materials.Nickel.getMolten(5184), new ItemStack(ItemRegistry.bw_glasses[0], 1, 1), 800, BW_Util.getMachineVoltageFromTier(3));
             GT_Values.RA.addFluidSolidifierRecipe(new ItemStack(ItemRegistry.bw_glasses[0], 1, 1), Materials.Tungsten.getMolten(1296), new ItemStack(ItemRegistry.bw_glasses[0], 1, 2), 800, BW_Util.getMachineVoltageFromTier(4));
@@ -511,7 +511,7 @@ public class RecipeLoader {
                     }
             );
 
-            GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), Materials.Aluminium.getPlates(1), ItemList.Circuit_Board_Plastic.get(1L), ItemList.Battery_RE_LV_Lithium.get(1L)}, Materials.SolderingAlloy.getMolten(288L), new ItemStack(ItemRegistry.CIRCUIT_PROGRAMMER), 600, BW_Util.getMachineVoltageFromTier(2));
+            GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), Materials.Aluminium.getPlates(1), ItemList.Circuit_Board_Plastic.get(1L), ItemList.Battery_RE_LV_Lithium.get(1L)}, Materials.SolderingAlloyMK1.getMolten(288L), new ItemStack(ItemRegistry.CIRCUIT_PROGRAMMER), 600, BW_Util.getMachineVoltageFromTier(2));
 
             GT_ModHandler.addCraftingRecipe(
                     new GT_TileEntity_Windmill(ConfigHandler.IDOffset + GT_Values.VN.length * 6 + 2, "bw.windmill", StatCollector.translateToLocal("tile.bw.windmill.name")).getStackForm(1L),
@@ -800,7 +800,7 @@ public class RecipeLoader {
                                 GT_OreDictUnificator.get(OrePrefixes.screw, Materials.Europium, 36L)
                         },
                         new FluidStack[]{
-                                Materials.SolderingAlloy.getMolten(1440),
+                                Materials.SolderingAlloyMK1.getMolten(1440),
                                 WerkstoffLoader.Neon.getFluidOrGas(20000),
                         },
                         ItemRegistry.voidminer[0].copy(),
@@ -824,7 +824,7 @@ public class RecipeLoader {
                                     GT_OreDictUnificator.get(OrePrefixes.screw, Materials.BlackPlutonium, 36L)
                             },
                             new FluidStack[]{
-                                    Materials.SolderingAlloy.getMolten(1440),
+                                    Materials.SolderingAlloyMK1.getMolten(1440),
                                     WerkstoffLoader.Krypton.getFluidOrGas(20000)
                             },
                             ItemRegistry.voidminer[1].copy(),
@@ -845,7 +845,7 @@ public class RecipeLoader {
                                     GT_OreDictUnificator.get(OrePrefixes.screw, Materials.Neutronium, 36L)
                             },
                             new FluidStack[]{
-                                    Materials.SolderingAlloy.getMolten(1440),
+                                    Materials.SolderingAlloyMK1.getMolten(1440),
                                     WerkstoffLoader.Oganesson.getFluidOrGas(20000)
                             },
                             ItemRegistry.voidminer[2].copy(),
@@ -864,7 +864,7 @@ public class RecipeLoader {
                                 ItemList.Electric_Piston_UV.get(64),
                         },
                         new FluidStack[]{
-                                Materials.SolderingAlloy.getMolten(1440),
+                                Materials.SolderingAlloyMK1.getMolten(1440),
                                 Materials.Osmium.getMolten(1440),
                                 Materials.Neutronium.getMolten(1440)
                         },
@@ -925,7 +925,7 @@ public class RecipeLoader {
                                         sensors[i].get(2 * (j + 1)),
                                         ItemList.TRANSFORMERS[4 + i].get(2 * (j + 1)),
                                 },
-                                Materials.SolderingAlloy.getMolten(144 * i * (j + 1)),
+                                Materials.SolderingAlloyMK1.getMolten(144 * i * (j + 1)),
                                 converter,
                                 200 * (j + 1),
                                 BW_Util.getMachineVoltageFromTier(4 + i));
@@ -937,7 +937,7 @@ public class RecipeLoader {
                                         sensors[i].get(2 * (j + 1)),
                                         ItemList.HATCHES_ENERGY[4 + i].get(2 * (j + 1)),
                                 },
-                                Materials.SolderingAlloy.getMolten(144 * i * (j + 1)),
+                                Materials.SolderingAlloyMK1.getMolten(144 * i * (j + 1)),
                                 eInput,
                                 200 * (j + 1),
                                 BW_Util.getMachineVoltageFromTier(4 + i));
@@ -949,7 +949,7 @@ public class RecipeLoader {
                                         emitters[i].get(2 * (j + 1)),
                                         ItemList.HATCHES_DYNAMO[4 + i].get(2 * (j + 1)),
                                 },
-                                Materials.SolderingAlloy.getMolten(144 * i * (j + 1)),
+                                Materials.SolderingAlloyMK1.getMolten(144 * i * (j + 1)),
                                 eDynamo,
                                 200 * (j + 1),
                                 BW_Util.getMachineVoltageFromTier(4 + i));
@@ -972,7 +972,7 @@ public class RecipeLoader {
                             Materials.Chrome.getPlates(8)
                     },
                     new FluidStack[]{
-                            Materials.SolderingAlloy.getMolten(1440)
+                            Materials.SolderingAlloyMK1.getMolten(1440)
                     },
                     ItemRegistry.cal.copy(),
                     24000,

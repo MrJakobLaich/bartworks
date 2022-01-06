@@ -56,7 +56,7 @@ public class TecTechResearchLoader {
                             GT_OreDictUnificator.get(OrePrefixes.screw, Materials.BlackPlutonium, 36L)
                     },
                     new FluidStack[]{
-                            Materials.SolderingAlloy.getMolten(1440),
+                            Materials.SolderingAlloyMK1.getMolten(1440),
                             WerkstoffLoader.Krypton.getFluidOrGas(20000)
                     },
                     ItemRegistry.voidminer[1].copy(),
@@ -80,7 +80,7 @@ public class TecTechResearchLoader {
                             GT_OreDictUnificator.get(OrePrefixes.screw, Materials.Neutronium, 36L)
                     },
                     new FluidStack[]{
-                            Materials.SolderingAlloy.getMolten(1440),
+                            Materials.SolderingAlloyMK1.getMolten(1440),
                             WerkstoffLoader.Oganesson.getFluidOrGas(20000)
                     },
                     ItemRegistry.voidminer[2].copy(),
@@ -105,7 +105,7 @@ public class TecTechResearchLoader {
                         ItemList.Electric_Piston_UV.get(64),
                 },
                 new FluidStack[]{
-                        Materials.SolderingAlloy.getMolten(1440),
+                        Materials.SolderingAlloyMK1.getMolten(1440),
                         Materials.Osmium.getMolten(1440),
                         Materials.Neutronium.getMolten(1440)
                 },

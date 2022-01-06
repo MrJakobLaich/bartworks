@@ -79,7 +79,7 @@ public class CraftingMaterialLoader implements IWerkstoffRunnable {
             GT_ModHandler.addCraftingRecipe(werkstoff.get(rotor), GT_Proxy.tBits, new Object[]{"PhP", "SRf", "PdP", 'P', werkstoff.get(plate), 'R', werkstoff.get(ring), 'S', werkstoff.get(screw)});
             GT_Values.RA.addAssemblerRecipe(werkstoff.get(plate, 4), werkstoff.get(ring), Materials.Tin.getMolten(32), werkstoff.get(rotor), 240, 24);
             GT_Values.RA.addAssemblerRecipe(werkstoff.get(plate, 4), werkstoff.get(ring), Materials.Lead.getMolten(48), werkstoff.get(rotor), 240, 24);
-            GT_Values.RA.addAssemblerRecipe(werkstoff.get(plate, 4), werkstoff.get(ring), Materials.SolderingAlloy.getMolten(16), werkstoff.get(rotor), 240, 24);
+            GT_Values.RA.addAssemblerRecipe(werkstoff.get(plate, 4), werkstoff.get(ring), Materials.SolderingAlloyMK1.getMolten(16), werkstoff.get(rotor), 240, 24);
 
             if (WerkstoffLoader.rotorShape != null)
                 GT_Values.RA.addExtruderRecipe(werkstoff.get(ingot, 5), WerkstoffLoader.rotorShape.get(0L), werkstoff.get(rotor), 200, 60);
